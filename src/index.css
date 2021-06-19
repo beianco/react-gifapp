@@ -1,7 +1,14 @@
-body {
-   background-color: #222;
-   color: #fff;
+* {
    font-family: Helvetica, Arial, sans-serif;
-   font-size: 1.3rem;
-   padding: 3px;
+}
+
+body {
+   padding: 60px;
+}
+
+input {
+   border: 1px solid #000;
+   border-radius: 5px;
+   padding: 10px 10px;
+   width: 100%;
 }
