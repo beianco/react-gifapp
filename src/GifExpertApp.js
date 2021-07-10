@@ -3,12 +3,13 @@ import { AddAnime } from './components/AddAnime';
 
 export const GifExpertApp = () => {
 
+   // creamos el state para la lista
    const [animes, setAnimes] = useState(['Naruto', 'Kimetsu no jaiba', 'Fairy tail', 'Attack on titan']);
 
-   const handleAdd = () => {
-      // setAnimes([...animes, 'One punch']);
-      setAnimes( a => [...animes, 'One punch'] );
-   }
+   // const handleAdd = () => {
+   //    // setAnimes([...animes, 'One punch']);
+   //    setAnimes( animesCall => [...animesCall, 'One punch'] );
+   // }
 
    return (
       <>
