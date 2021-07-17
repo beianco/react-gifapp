@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { AddAnime } from './components/AddAnime';
+import { GifGrid } from './components/GifGrid';
 
 export const GifExpertApp = () => {
 
    // creamos el state para la lista
-   const [animes, setAnimes] = useState(['Naruto', 'Kimetsu no jaiba', 'Fairy tail', 'Attack on titan']);
+   const [animes, setAnimes] = useState(['Kimetsu no jaiba']);
 
    // const handleAdd = () => {
    //    // setAnimes([...animes, 'One punch']);
@@ -13,16 +14,13 @@ export const GifExpertApp = () => {
 
    return (
       <>
-         <h2>GifExpertApp</h2>
-         <AddAnime setAnimes={ setAnimes } />
-         <hr />
-
+         <h2 className="logo">GifExpertApp</h2>
+         <AddAnime setAnimes={setAnimes} />
+         
          {
-            animes.map( item => {
-               return (
-                  <li key={ item }>{ item }</li>
-               )
-            })
+            animes.map(item => (
+               <GifGrid anime={item} key={item} />
+            ))
          }
       </>
    )

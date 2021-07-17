@@ -8,7 +8,41 @@ body {
 
 input {
    border: 1px solid #000;
+   box-sizing: border-box;
    border-radius: 5px;
    padding: 10px 10px;
    width: 100%;
 }
+
+img {
+   max-width: 100%;
+   width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+   margin: 0;
+   padding: 0;
+}
+
+.logo {
+   margin-bottom: 20px;
+}
+
+.heading {
+   margin: 40px 0 20px 0;
+}
+
+/* GRID STYLES
+-------------------------*/
+.card-grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   column-gap: 20px;
+}
+
+.card .card-meta {
+   padding: 20px 20px;
+}
+
+
+

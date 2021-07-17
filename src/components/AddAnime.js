@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 export const AddAnime = ({ setAnimes }) => {
 
+   // const [animes, setAnimes] = useState(['Naruto', 'Kimetsu no jaiba', 'Fairy tail', 'Attack on titan']);
+
    const [inputValue, setinputValue] = useState('');
 
    // cambiamos el value state con un evento
@@ -14,7 +16,7 @@ export const AddAnime = ({ setAnimes }) => {
       e.preventDefault();
 
       // confirmamos si el input no esta vacio
-      if( inputValue.trim().length > 0 ) setAnimes( animes => [...animes, inputValue]);
+      if( inputValue.trim().length > 0 ) setAnimes( animes => [inputValue, ...animes]);
 
       // reseteamos el input
       setinputValue('');
